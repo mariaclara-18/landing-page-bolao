@@ -1,0 +1,822 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* estilos universais */
+    --cor-fundo-cards: #FFFFFF;
+    --cor-texto-preto: #18191A;
+    --cor-texto-verde: #3E4A3C;
+    --cor-texto-cinza: #A6A6A6;
+    --cor-texto-branco: #F9F9F9;
+    --cor-destaque-verde: #006B26;
+    --cor-destaque-amarelo: #FFE243;
+
+    /* cores de fundo body e sessão */
+    --cor-fundo-pagina: #F9F9F9;
+    --cor-fundo-header: #F9F9F9;
+    --cor-fundo-footer: #1A1C1C;
+    --cor-fundo-sessao-como-participar: #E4E4E4;
+    --cor-fundo-sessao-jogos-brasileiros: #039645;
+    --cor-fundo-sessao-ranking: #E4E4E4;
+    --cor-fundo-sessao-beneficios: #FDCF00;
+    --cor-fundo-sessao-formulario: #006B26;
+
+    /* cores botões e texto sessão apresentação */
+    --cor-fundo-button-apresentacao: #006B26;
+    --cor-fundo-button-apresentacao-alternativo: #F9F9F9;
+    --cor-borda-button-apresentacao: #006B26;
+    --cor-texto-button-apresentacao: #F9F9F9;
+    --cor-texto-button-apresentacao-alternativo: #006B26;
+
+    --cor-titulo-sessao-apresentacao: #1A1C1C;
+    --cor-subtitulo-sessao-apresentacao: #3D57A6;
+
+    /* cores sessão como participar */
+    --cor-borda-card1-sessao-como-participar: #006B26;
+    --cor-borda-card2-sessao-como-participar: #4169E3;
+    --cor-borda-card3-sessao-como-participar: #6D5E00;
+    --cor-borda-card4-sessao-como-participar: #61DF74;
+
+    /* cores sessão jogos brasileiros */
+    --cor-texto-principal-sessao-jogos-br: #FDCE02;
+    --cor-texto-grupo-horario-card: #3D57A6;
+    --cor-texto-versus: #BDCAB9;
+
+    /* cores botão palpite */
+    --cor-button-palpite: #E6F0E9;
+    --cor-texto-button-palpite: #006B26;
+
+    /* cores sessão ranking */
+    --cor-fundo-card-jogador-top: #008732;
+    --cor-fundo-card-jogador: #E8E8E8;
+
+    /* cores card show ranking */
+    --cor-fundo-card-show-ranking: #5771C1;
+    --cor-button-ranking: #F9F9F9;
+    --cor-texto-button-ranking: #5771C1;
+    --cor-texto-card-show-ranking: #F9F9F9;
+
+    /* cores sessão formulário */
+    --cor-fundo-button-form: #6E5F01;
+}
+
+body{
+    font-family: "Inter", "Montserrat", Arial;
+    background-color: var(--cor-fundo-pagina);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px 50px;
+    background-color: var(--cor-fundo-header);
+    box-shadow: 0 8px 12px -5px #CDCDCD;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.logo-site h1{
+    font-family: "Montserrat";
+    color: var(--cor-destaque-verde);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 24px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: var(--cor-texto-preto);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+nav ul a:hover{
+    color: var(--cor-subtitulo-sessao-apresentacao);
+    font-weight: 600;
+}
+
+.button-participar-agora button{
+    font-size: 16px;
+    width: 170px;
+    padding: 10px 12px;
+    border-radius: 9999px;
+    background-color: var(--cor-fundo-button-apresentacao);
+    border: 1px solid var(--cor-borda-button-apresentacao);
+    color: var(--cor-texto-branco);
+    font-weight: 400;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.button-participar-agora button:hover{
+    transform: scale(0.95);
+}
+
+section{
+    width: 100%;
+}
+
+.sessao-como-participar{
+    background-color: var(--cor-fundo-sessao-como-participar);
+}
+
+.sessao-jogos-brasileiros{
+    background-color: var(--cor-fundo-sessao-jogos-brasileiros);
+}
+
+.destaque-verde{
+    color: var(--cor-destaque-verde);
+}
+
+.destaque-amarelo{
+    color: var(--cor-destaque-amarelo);
+}
+
+.container-sessao{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 50px;
+    gap: 48px;
+}
+
+.container-conteudos-informativos{
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.container-conteudos-informativos h5{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--cor-subtitulo-sessao-apresentacao);
+    letter-spacing: 1.6px;
+}
+
+.container-conteudos-informativos h2{
+    font-family: "Montserrat";
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 64px;
+    color: var(--cor-texto-preto);
+    letter-spacing: -1.12px;
+}
+
+.container-conteudos-informativos p{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--cor-texto-verde);
+}
+
+.container-buttons-conteudos-informativos{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.container-buttons-conteudos-informativos button{
+    font-size: 16px;
+    width: 180px;
+    padding: 25px 13px;
+    border-radius: 12px;
+    background-color: var(--cor-fundo-button-apresentacao);
+    border: none;
+    color: var(--cor-texto-branco);
+    font-weight: 400;
+    line-height: 24px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.container-buttons-conteudos-informativos button:hover{
+    background-color: #004d1b;
+}
+
+.container-buttons-conteudos-informativos button.button-nao-preenchido{
+    background-color: var(--cor-fundo-button-apresentacao-alternativo);
+    color: var(--cor-texto-button-apresentacao-alternativo);
+    border: 2px solid var(--cor-borda-button-apresentacao);
+}
+
+.container-buttons-conteudos-informativos button.button-nao-preenchido:hover{
+    background-color: var(--cor-fundo-button-apresentacao);
+    color: var(--cor-texto-button-apresentacao);
+}
+
+.button-preenchido {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.container-buttons-conteudos-informativos i{
+    font-size: 20px;
+    color: var(--cor-texto-branco);
+}
+.container-imagem-sessao-apresentacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    height: auto;
+}
+
+.container-imagem-sessao-apresentacao img{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sessao-com-coluna{
+    flex-direction: column;
+    align-items: center;
+}
+
+.sessao-com-coluna h2{
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.container-area-cards-como-participar{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: center;
+    gap: 24px;
+}
+
+.card-informativo-como-participar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 48px;
+    background-color: var(--cor-fundo-cards);
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.card-informativo-como-participar:hover{
+    transform: scale(1.05);
+}
+
+.card-participar-1{
+    border-bottom: 4px solid var(--cor-borda-card1-sessao-como-participar);
+}
+
+.card-participar-2{
+    border-bottom: 4px solid var(--cor-borda-card2-sessao-como-participar);
+}
+
+.card-participar-3{
+    border-bottom: 4px solid var(--cor-borda-card3-sessao-como-participar);
+}
+
+.card-participar-4{
+    border-bottom: 4px solid var(--cor-borda-card4-sessao-como-participar);
+}
+
+.card-informativo-como-participar h3{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card-informativo-como-participar p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--cor-texto-verde);
+}
+
+.box-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 9999px;
+    margin-bottom: 20px;
+}
+
+.box-icons svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.verde-escuro{
+    color: var(--cor-borda-card1-sessao-como-participar);
+    background-color: #E6F0E9;
+}
+
+.azul{
+    color: var(--cor-borda-card2-sessao-como-participar);
+    background-color: #ECEEF6;
+}
+
+.marrom{
+    color: var(--cor-borda-card3-sessao-como-participar);
+    background-color: #F0EFE6;
+}
+
+.verde-claro{
+    color: var(--cor-borda-card1-sessao-como-participar);
+    background-color: #EFFCF1;
+}
+
+.verde-claro i{
+    font-size: 24px;
+}
+
+.container-area-cards-jogos-brasileiros{
+    display: grid;
+    grid-template-columns: repeat(3, 368px);
+    justify-content: center;
+    gap: 24px;
+}
+
+.card-jogo-copa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background-color: var(--cor-fundo-cards);
+    border-radius: 12px;
+}
+
+.grup-horario{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.grup-horario p,
+.grup-horario time{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--cor-texto-grupo-horario-card);
+}
+
+.container-jogo-paises{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    min-width: 224px;
+    padding: 24px 0;
+}
+
+.grup-pais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.grup-pais img{
+    width: 42px;
+    height: auto;
+    display: block;
+}
+
+.grup-pais figcaption{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.texto-versus{
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--cor-texto-versus);
+}
+
+.grup-button-palpite{
+    width: 100%;
+}
+
+.grup-button-palpite button{
+    width: 100%;
+    padding: 16px 0;
+    background-color: var(--cor-button-palpite);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--cor-texto-button-palpite);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.grup-button-palpite button:hover{
+    background-color: #c7f4d4;
+}
+
+.sessao-ranking{
+    background-color: var(--cor-fundo-sessao-ranking);
+}
+
+.area-ranking-show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+}
+
+.container-ranking{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px;
+    width: 60%;
+    min-width: 0;
+    background-color: var(--cor-fundo-cards);
+    border-radius: 16px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container-ranking h5{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.container-cards-ranking{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.card-jogador-ranking{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card-jogador-ranking {
+    background-color: var(--cor-fundo-card-jogador);
+}
+
+.card-jogador-ranking.card-jogador-top {
+    background-color: var(--cor-fundo-card-jogador-top);
+    color: var(--cor-texto-branco);
+}
+
+.texto-jogador-rankig{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.texto-jogador-rankig p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.posicao-ranking{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.pontuacao-ranking{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.card-show-ranking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 48px;
+    gap: 30px;
+    width: 340px;
+    flex-shrink: 0;
+    color: var(--cor-texto-branco);
+    background-color: var(--cor-fundo-card-show-ranking);
+    border-radius: 16px;
+}
+
+.texto-show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.texto-show i{
+    font-size: 35px;
+    color: var(--cor-texto-branco);
+}
+
+.texto-show h3{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.texto-show p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button-ranking{
+    width: 100%;
+}
+
+.button-ranking button{
+    width: 100%;
+    background-color: var(--cor-button-ranking);
+    color: var(--cor-texto-button-ranking);
+    border: none;
+    border-radius: 12px;
+    padding: 24px 48px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button-ranking button:hover{
+    transform: scale(0.95);
+}
+
+.sessao-beneficios{
+    background-color: var(--cor-fundo-sessao-beneficios);
+}
+
+.container-area-cards-beneficio{
+    display: grid;
+    grid-template-columns: repeat(3, 368px);
+    justify-content: center;
+    gap: 24px;
+}
+
+.card-beneficios{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px;
+    background-color: var(--cor-fundo-cards);
+    border-radius: 12px;
+}
+
+.card-beneficios i{
+    font-size: 32px;
+    color: var(--cor-destaque-verde);
+}
+
+.descricao-beneficio{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.descricao-beneficio h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.descricao-beneficio p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--cor-texto-verde);
+}
+
+.sessao-formulario{
+    background-color: var(--cor-fundo-sessao-formulario);
+}
+
+.container-informativo-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+    max-width: 552px;
+}
+
+.container-informativo-formulario h2{
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--cor-texto-branco);
+}
+
+.container-informativo-formulario p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--cor-texto-branco);
+}
+
+.grup-cheklist-formulario{
+    width: 100%;
+}
+
+.grup-cheklist-formulario ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.grup-cheklist-formulario li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--cor-texto-branco);
+}
+
+.grup-cheklist-formulario li i{
+    font-size: 20px;
+    color: var(--cor-texto-branco);
+}
+
+.container-formulario{
+    width: 552px;
+    background-color: var(--cor-fundo-cards);
+    border-radius: 24px;
+    padding: 50px 40px;
+}
+
+.container-formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 16px;
+    width: 100%;
+}
+
+.grup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+}
+
+.grup-form input{
+    width: 100%;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border: 1px solid #6B7280;
+    outline: none;
+    color: var(--cor-texto-cinza);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.grup-form label{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--cor-texto-preto);
+}
+
+.button-formulario{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.button-formulario button{
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--cor-fundo-button-form);
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--cor-texto-branco);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.button-formulario button:hover{
+    background-color: #544800;
+    transform: scale(0.95);
+}
+
+.seguranca-formulario{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    color: var(--cor-texto-cinza);
+    font-size: 14px;
+}
+
+.seguranca-formulario i{
+    font-size: 18px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 50px 50px;
+    background-color: var(--cor-fundo-footer);
+}
+
+.container-icones-rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.container-icones-rodape i{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-destaque-amarelo);
+}
+
+.container-texto-rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.container-texto-rodape h3{
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.container-texto-rodape p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--cor-texto-cinza);
+}

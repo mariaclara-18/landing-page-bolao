@@ -1,0 +1,14 @@
+.sessao-jogos-copa{
+    background-color: #EFEFF0;
+}
+
+.container-area-cards-jogos-copa{
+    display: grid;
+    grid-template-columns: repeat(3, 368px);
+    justify-content: center;
+    gap: 24px;
+}
+
+.sessao-jogos-copa h2{
+    color: #3D57A6;
+}

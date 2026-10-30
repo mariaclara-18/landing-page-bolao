@@ -1,0 +1,63 @@
+body{
+    font-family: "Inter", "Montserrat", Arial;
+    background-color: var(--cor-fundo-pagina);
+
+        background:
+            radial-gradient(
+                ellipse at top left,
+                rgba(0, 156, 59, 0.12),
+                transparent 45%
+            ),
+            radial-gradient(
+                ellipse at bottom right,
+                rgba(255, 223, 0, 0.14),
+                transparent 45%
+            ),
+            #fbfcf7;
+} 
+
+.container-sucesso {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.conteudo-sucesso {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.conteudo-sucesso h1 {
+    margin-bottom: 15px;
+    color:#006B26
+}
+
+.conteudo-sucesso h1 .nomeUsuario{
+    color:#FDCF00
+}
+
+.conteudo-sucesso p {
+    margin-bottom: 25px;
+    color:#031f0e
+}
+
+.botao-voltar {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #006B26;
+    color: #ffffff;
+}
+
+.botao-voltar:hover {
+    opacity: 0.9;
+}
