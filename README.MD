@@ -86,11 +86,11 @@ As imagens e o vídeo abaixo documentam o formulário e o resultado do envio. Os
 
 ### Confirmação após o envio
 
-![Tela de confirmação de cadastro](docs/assets/confirmacao-cadastro.png)
+![Tela de confirmação de cadastro](docs/assets/evidencia_feedback_formulario_bolao.png)
 
 ### Vídeo demonstrativo
 
-[**Assistir à demonstração do Bolão Hexa 2026**] https://drive.google.com/drive/folders/1m_T9DY8XeCrx_B7kcVB3rbDkSza9eeJx?usp=sharing
+[**Assistir à demonstração do Bolão Hexa 2026**] (https://drive.google.com/drive/folders/1m_T9DY8XeCrx_B7kcVB3rbDkSza9eeJx?usp=sharing)
 
 O vídeo está versionado como arquivo do projeto. Caso o repositório ou a plataforma não reproduza o MP4 diretamente, baixe o arquivo pelo link acima para assistir.
 
