@@ -82,7 +82,7 @@ As imagens e o vídeo abaixo documentam o formulário e o resultado do envio. Os
 
 ### Formulário de cadastro
 
-![Tela do formulário do Bolão Hexa 2026](docs/assets/formulario-cadastro.png)
+![Tela do formulário do Bolão Hexa 2026](docs/assets/evidencia_formulario_bolao.png)
 
 ### Confirmação após o envio
 
