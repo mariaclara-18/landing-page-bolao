@@ -88,9 +88,9 @@ As imagens e o vídeo abaixo documentam o formulário e o resultado do envio. Os
 
 ![Tela de confirmação de cadastro](docs/assets/evidencia_feedback_formulario_bolao.png)
 
-### Vídeo demonstrativo
+###  Vídeo Demonstrativo
 
-> [Acessar a pasta com o vídeo no Google Drive ↗️](https://drive.google.com/drive/folders/1m_T9DY8XeCrx_B7kcVB3rbDkSza9eeJx?usp=sharing)
+[![Assistir Demonstração](https://img.shields.io/badge/Assistir%20Demonstra%C3%A7%C3%A3o-Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1m_T9DY8XeCrx_B7kcVB3rbDkSza9eeJx?usp=sharing)
 
 O vídeo está versionado como arquivo do projeto. Caso o repositório ou a plataforma não reproduza o MP4 diretamente, baixe o arquivo pelo link acima para assistir.
 
