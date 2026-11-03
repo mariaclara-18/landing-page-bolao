@@ -90,7 +90,7 @@ As imagens e o vídeo abaixo documentam o formulário e o resultado do envio. Os
 
 ### Vídeo demonstrativo
 
-**Assistir à demonstração do Bolão Hexa 2026: ** https://drive.google.com/drive/folders/1m_T9DY8XeCrx_B7kcVB3rbDkSza9eeJx?usp=sharing
+▶️ **[Clique aqui para assistir à demonstração do Bolão Hexa 2026](https://drive.google.com/drive/folders/1m_T9DY8XeCrx_B7kcVB3rbDkSza9eeJx?usp=sharing)**
 
 O vídeo está versionado como arquivo do projeto. Caso o repositório ou a plataforma não reproduza o MP4 diretamente, baixe o arquivo pelo link acima para assistir.
 
